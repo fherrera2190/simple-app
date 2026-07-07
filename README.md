@@ -1,56 +1,64 @@
-# Welcome to your Expo app 👋
+# Simple App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Esta aplicación móvil fue desarrollada con Expo y React Native para realizar diagnósticos básicos de conectividad, revisar respuestas HTTP y visualizar archivos PDF desde una URL.
 
-## Get started
+El objetivo del proyecto es ofrecer una herramienta sencilla para probar recursos remotos, inspeccionar cabeceras y entender mejor cómo se comporta una página o documento desde un dispositivo móvil.
 
-1. Install dependencies
+## ¿Qué hace esta app?
+
+Simple App permite:
+
+- ingresar una URL para analizar su comportamiento;
+- revisar información básica de red del dispositivo;
+- inspeccionar cabeceras HTTP importantes;
+- abrir archivos PDF directamente desde una dirección web;
+- ver el resultado de forma clara mediante un panel de logs.
+
+## Tecnologías utilizadas
+
+- Expo
+- React Native
+- TypeScript
+- Expo Router
+- react-native-webview
+- react-native-pdf
+- expo-network y expo-file-system
+
+## Cómo ejecutar el proyecto
+
+1. Instala las dependencias:
 
    ```bash
    npm install
    ```
 
-2. Start the app
+2. Inicia la aplicación:
 
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+3. Abre la app en tu emulador, dispositivo físico o Expo Go.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Funcionalidades principales
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- Diagnóstico de conexión y red
+- Validación de recursos remotos
+- Visualización de respuestas HTTP
+- Apertura de PDFs en modo integrado
+- Registro de eventos y errores en tiempo real
 
-## Get a fresh project
+## Estructura del proyecto
 
-When you're ready, run:
+- App.tsx: lógica principal de la aplicación
+- src/: componentes y navegación
+- assets/: recursos visuales e íconos
+- scripts/: utilidades del proyecto
 
-```bash
-npm run reset-project
-```
+## Contribuciones
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Si quieres mejorar este proyecto, puedes abrir un issue o enviar un pull request.
 
-### Other setup steps
+## Licencia
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Este proyecto se distribuye bajo la licencia MIT.
